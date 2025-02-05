@@ -103,4 +103,10 @@ button:hover{
     border-radius: 5px;
     
 }
-
+#hintButton{
+    color: yellow;
+    background-color: black;
+    font-size: 70px;
+    border-style: none;
+    border-radius: 5px;
+}

@@ -4,6 +4,13 @@ let Input1 = document.getElementById("web1Input1");
 let Submit1 = document.getElementById("web1Submit1");
 
 let hintButton = document.getElementById("hintButton");
+let hintText = document.getElementById("hintText");
+
+hintButton.onclick = function hint(){
+    hintButton.style.display = "none";
+    hintText.textContent = "all of them";
+    
+}
 
 Submit1.onclick = function riddle1(){                   // на нажатии запускает проверку ответа
     
