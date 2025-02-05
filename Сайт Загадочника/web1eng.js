@@ -3,6 +3,8 @@ let btnContainer = document.getElementById("web1BtnContainer1");
 let Input1 = document.getElementById("web1Input1");
 let Submit1 = document.getElementById("web1Submit1");
 
+let hintButton = document.getElementById("hintButton");
+
 Submit1.onclick = function riddle1(){                   // на нажатии запускает проверку ответа
     
     let inputValue = Input1.value;
