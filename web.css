@@ -5,7 +5,8 @@ body{
     font-size: 40px;
     color: rgb(252, 42, 14);
     font-family:cursive;
-    text-shadow: 20px 20px 1px black;
+    text-shadow: 15px 15px 1px black;
+    
 }
 
 button{
@@ -27,4 +28,17 @@ button:active{
     border-style: solid;
     border-color: black;
     border-width: 3px;
+}
+#header{
+    justify-self: right;
+    margin-top: 0px;
+    padding-top: 0px;
+    
+    
+}
+.headerButton{
+    border: none;
+    border-radius: 0px;
+    position: sticky;
+    margin: 1px;
 }
