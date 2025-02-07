@@ -65,6 +65,7 @@ Submit1.onclick = function riddle1(){                   // на нажатии �
        if(imgLose){                     //удаляет кнопку и инпут
             Submit1.remove();
             Input1.remove();
+            hintButton.remove();
        }
     };
 }
