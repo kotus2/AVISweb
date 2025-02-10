@@ -1,8 +1,6 @@
 body{
     background-image: url(doubleFaced.jpg);
     text-align: center;
-
-    
 }
 #coinThrowH1{
     color: orange;
@@ -10,6 +8,7 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
+
 button{
     font-size: 60px;
     color: orange;
@@ -36,11 +35,11 @@ button:active{
 
 #throwButton{
   display: none;
-  justify-self: center;
+
 }
 
 #returnButton{
     display: none;
-    justify-self: center;
+
 }
 

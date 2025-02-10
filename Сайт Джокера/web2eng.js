@@ -27,6 +27,7 @@ const goal = document.getElementById("goal");
 const randomed = document.getElementById("randomed");
 var audioKassa = new Audio("kassa.mp3");
 var audioEaster = new Audio("easterEcho.wav");
+var audioVolume = audioEaster.volume = 0.3;
 var element;
 
 startProcess.onclick = function creditCard()
@@ -193,8 +194,9 @@ startProcess.onclick = function creditCard()
                     
                     if(answer == randomer2)
                     {
+                        document.getElementById("goal2").textContent = `You must get ${answer}`
                         goal.textContent = `You got ${answer}`;
-                        console.log("победа")
+                        console.log("win")
                         win = true;
                         rouletteSpin.remove();
                         money.remove();
