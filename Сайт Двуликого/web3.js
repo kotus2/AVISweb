@@ -24,14 +24,17 @@ heads.onclick = () => {chosen = 1, tailsHeads()};
 throwButton.onclick = function coinThrow(){
     answer = Math.floor(Math.random()*2);
     console.log(answer);
-    coinSound.play();
-
 
     if(chosen == answer){
-         console.log("победа")
-        
-    }else{
+        coinSound.play();
+        console.log("win")
         throwButton.remove();
         returnButton.style.display = "block";
-    }
+   }else{
+       throwButton.remove();
+       text.textContent = "you lost";
+       pistolSound.play();
+
+       
+   }    
 }
