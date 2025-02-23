@@ -24,6 +24,7 @@ let flags = [flag1, flag2, flag3, flag4];
 
 var win;
 const goal = document.getElementById("goal");
+const goal2 = document.getElementByI(" goal2");
 const randomed = document.getElementById("randomed");
 var audioKassa = new Audio("kassa.mp3");
 var audioEaster = new Audio("easterEcho.wav");
@@ -194,8 +195,8 @@ startProcess.onclick = function creditCard()
                     
                     if(answer == randomer2)
                     {
-                        document.getElementById("goal2").textContent = `You must get ${answer}`
-                        goal.textContent = `You got ${answer}`;
+                        goal2.textContent = `You must get ${answer}`
+                        
                         console.log("win")
                         win = true;
                         rouletteSpin.remove();
