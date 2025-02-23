@@ -28,7 +28,7 @@ const goal2 = document.getElementById("goal2");
 const randomed = document.getElementById("randomed");
 var audioKassa = new Audio("kassa.mp3");
 var audioEaster = new Audio("easterEcho.wav");
-var audioVolume = audioEaster.volume = 0.3;
+var audioVolume = audioEaster.volume = 0.2;
 var element;
 
 startProcess.onclick = function creditCard()
