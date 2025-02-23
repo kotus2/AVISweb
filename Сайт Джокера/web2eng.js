@@ -40,9 +40,9 @@ startProcess.onclick = function creditCard()
 
     startProcess.remove();
 
-    // хрень которая проявляет кнопку после инпута
+    // makes button after inputs in credit card
     
-     function checker(flags){     // создаёт кнопку если флаги верны
+     function checker(flags){               // checks input box
          for(i = 0; i < flags.length; i++){
              if(!flags[i]){
                  return -1;
@@ -53,7 +53,7 @@ startProcess.onclick = function creditCard()
     
     creditCardNumber.addEventListener("input", function()
     {   
-        let value = this.value.replace(/\D/g, "");
+        let value = this.value.replace(/\D/g, "");  // this regular expression delets all letter characters
         this.value = value;
         
             if(this.value.length === 16)
@@ -77,14 +77,14 @@ startProcess.onclick = function creditCard()
     
     creditCardDate.addEventListener("input", function()
     {
-        let value = this.value.replace(/\D/g, "");
+        let value = this.value.replace(/\D/g, "");  // this regular expression deletes all letter characters
         this.value = value;
         
         value = value.slice(0, 2) + "/" + value.slice(2);
         this.value = value;
 
     
-        if(this.value.length === 5)                     // если дата карточки != 5 флаг не считает
+        if(this.value.length === 5)                     
         {                   
         
         flag2 = true;
@@ -104,7 +104,7 @@ startProcess.onclick = function creditCard()
     
     creditCardName.addEventListener("input", function()
     {
-        let value = this.value.replace(/\d/, "");
+        let value = this.value.replace(/\d/, "");   // this regular expression deletes all number characters
         this.value = value;
          
         flag3 = true;
@@ -142,9 +142,7 @@ startProcess.onclick = function creditCard()
         checker(flags)
     });
 
-
-
-//
+1
    
     creditCardSubmit.onclick = function ruolette()
     {
@@ -171,7 +169,6 @@ startProcess.onclick = function creditCard()
         document.getElementById("body").appendChild(money);
 
         
-        // тут начинается цирк с конями, медведями, лосями, лососями, волками, оленями и т.д. и т.п.
 
         let rouletteNumbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
         rouletteSpinButton.onclick = function rouletteCheck(element)
@@ -179,7 +176,7 @@ startProcess.onclick = function creditCard()
             
             let randomer = Math.floor(Math.random()*13);
         
-            if(element == randomer){ // сверяет зарандомленный номер с массивом и выкладывает тот который подходит 
+            if(element == randomer){   // comparing random number with the array and gets from there one that is the same
                 console.log(element);
                 goal.textContent = `You must get ${answer}`
             }
@@ -189,13 +186,12 @@ startProcess.onclick = function creditCard()
                 if(element == randomer){
                     var answer = element;
                     console.log(answer);
-                    goal2.textContent = `You must get ${answer}`
+                    
                     
                 }
             let randomer2 =  Math.floor(Math.random()*13);
             
-            goal.textContent = `You got ${randomer2}`;
-
+         
                     if(answer == randomer2)
                     {
                        
@@ -208,8 +204,7 @@ startProcess.onclick = function creditCard()
                         document.createElement("button");
                         returnButton.style.display = "block";
                         
-       
-                        
+                       
                     }else{
                         whySoSerious.style.display = "block";
                         
