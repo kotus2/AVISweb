@@ -43,9 +43,10 @@ Submit1.onclick = function riddle1(){                   // на нажатии �
             newBtn.innerHTML = "<a href = ../webeng.html> <button id=web1NewNewBtn1>Go back</button> </a>"
 
           
-            Submit1.remove();           //удаляет кнопку и инпут
+            Submit1.remove();           
             Input1.remove();
-           
+            hintText.remove();
+            hintButton.remove();
         
         }
     
@@ -61,11 +62,14 @@ Submit1.onclick = function riddle1(){                   // на нажатии �
         imgLose.style.height = "50%";
 
         imageContainer.appendChild(imgLose);
+        hintText.remove();
+        hintButton.remove();
       
-       if(imgLose){                     //удаляет кнопку и инпут
+       if(imgLose){                     
             Submit1.remove();
             Input1.remove();
             hintButton.remove();
+            hintText.remove();
        }
     };
 }
