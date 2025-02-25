@@ -29,7 +29,8 @@ throwButton.onclick = function coinThrow(){
 
     if(chosen == answer){
         coinSound.play();
-        console.log("win")
+       
+        text.textContent = "you won";
         
         throwButton.remove();
         returnButton.style.display = "block";
@@ -38,7 +39,5 @@ throwButton.onclick = function coinThrow(){
         throwButton.remove();
         text.textContent = "you lost";
         pistolSound.play();
-
-       
     }
 }

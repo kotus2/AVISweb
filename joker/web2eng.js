@@ -200,7 +200,7 @@ startProcess.onclick = function creditCard()
                         win = true;
                         rouletteSpin.remove();
                         money.remove();
-                        h1.textContent = "Oh crap!"
+                        h1.textContent = "Oh no!"
                         document.createElement("button");
                         returnButton.style.display = "block";
                         
@@ -209,7 +209,6 @@ startProcess.onclick = function creditCard()
                         whySoSerious.style.display = "block";
                         
                         setTimeout(() => {whySoSerious.style.display = "none", audioEaster.play()}, 500)
-
 
                     }     
                 }           

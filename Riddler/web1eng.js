@@ -21,7 +21,7 @@ Submit1.onclick = function riddle1(){
 
     if (lowerCaseInput == "all of them"){                  
         
-        document.getElementById("web1H1").textContent = "bloody hell!";
+        document.getElementById("web1H1").textContent = "I couldn't guess that!";
         let answer1 = document.getElementById("web1H1").textContent;
         
         let imgWin = document.createElement("img");
@@ -34,7 +34,7 @@ Submit1.onclick = function riddle1(){
             imageContainer.appendChild(imgWin);
 
         
-        if(answer1 == "bloody hell!"){          
+        if(answer1 == "I couldn't guess that!"){          
             
             let newBtn = document.createElement("button")
             newBtn.id = "web1NewBtn1"
@@ -64,6 +64,7 @@ Submit1.onclick = function riddle1(){
         imageContainer.appendChild(imgLose);
         hintText.remove();
         hintButton.remove();
+        Input1.remove();
       
        if(imgLose){                     
             Submit1.remove();
