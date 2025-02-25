@@ -12,21 +12,21 @@ hintButton.onclick = function hint(){
     
 }
 
-Submit1.onclick = function riddle1(){                   // на нажатии запускает проверку ответа
+Submit1.onclick = function riddle1(){                   
     
     let inputValue = Input1.value;
     let input = String(inputValue)
     let lowerCaseInput = input.toLowerCase();
     
 
-    if (lowerCaseInput == "all of them"){                  // смотрит правильный ли ответ
+    if (lowerCaseInput == "all of them"){                  
         
         document.getElementById("web1H1").textContent = "bloody hell!";
         let answer1 = document.getElementById("web1H1").textContent;
         
         let imgWin = document.createElement("img");
       
-            imgWin.src = "riddlerWin.jpg";              // параметры новой картинки
+            imgWin.src = "riddlerWin.jpg";              
             imgWin.style.width = "30%"; 
             imgWin.style.height = "30%";
             
@@ -34,7 +34,7 @@ Submit1.onclick = function riddle1(){                   // на нажатии �
             imageContainer.appendChild(imgWin);
 
         
-        if(answer1 == "bloody hell!"){               // создаёт кнопку при правильном ответе
+        if(answer1 == "bloody hell!"){          
             
             let newBtn = document.createElement("button")
             newBtn.id = "web1NewBtn1"
