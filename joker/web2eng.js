@@ -142,7 +142,7 @@ startProcess.onclick = function creditCard()
         checker(flags)
     });
 
-1
+
    
     creditCardSubmit.onclick = function ruolette()
     {
