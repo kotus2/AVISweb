@@ -1,5 +1,6 @@
 body{
     background-color: gray;
+    
 }
 
 div{
@@ -13,4 +14,13 @@ div{
     align-content: center;
     justify-content: center;
     
+}
+
+#asideBox{
+    display: flex;
+    
+    width: 100px;
+    float: left;
+    background-color: aqua;
+    width:33%;
 }
