@@ -1,5 +1,14 @@
+@font-face {
+    font-family: FaithCollapsing;
+    src: url("FaithCollapsing.ttf");
+
+}
+
 body{
     background-color: gray;
+    display: grid;
+    font-family: FaithCollapsing;
+    font-size: large;
     
 }
 
@@ -9,18 +18,9 @@ div{
 }
 
 #headerbox{
-    
     display: flex;
     align-content: center;
     justify-content: center;
     
 }
 
-#asideBox{
-    display: flex;
-    
-    width: 100px;
-    float: left;
-    background-color: aqua;
-    width:33%;
-}
